@@ -1,0 +1,12 @@
+<h1 style="color: #1FDED2">Index of Songs</h1>
+<%= link_to 'Add New Song', new_song_path %>
+
+<% @songs.each do |song| %>
+  <div>
+    <h2><%= song.title %></h2>
+    <p><%= song.artist %></p>
+    <i><%= song.album %></i>
+  </div>
+  <hr>
+<% end %>
+      

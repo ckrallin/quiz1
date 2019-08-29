@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'quizzes#index'
+  root 'songs#index'
+  resources :songs
 end
